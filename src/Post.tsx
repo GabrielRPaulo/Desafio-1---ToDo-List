@@ -1,4 +1,4 @@
 export function Post() {
-    return <p>Post</p>
+    return <p>New TasK</p>
 }
 

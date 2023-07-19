@@ -1,6 +1,7 @@
 import { Post } from "./Post"
-import "./global.css";
 import { Header } from "./components/Header";
+import "./global.css";
+import styles from "./App.module.css"
 
 export function App() {
 
@@ -8,7 +9,12 @@ export function App() {
     <div>
       <Header/>
 
-      <Post />
+      <div className={styles.wrapper}>
+        <aside>
+          Topbar 
+        </aside>
+        <main><Post /></main>
+      </div>
     </div>
   )
 }
